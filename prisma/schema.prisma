@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -13,6 +12,6 @@ model Query {
   createdAt DateTime @default(now())
   fullName  String   @db.VarChar(255)
   email     String   @unique
-  contact   BigInt   @unique
-  query     String?
+  contact   String   @unique @db.VarChar(10)
+  message   String?
 }
