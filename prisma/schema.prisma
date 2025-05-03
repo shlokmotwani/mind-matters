@@ -11,7 +11,7 @@ model Query {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   fullName  String   @db.VarChar(255)
-  email     String   @unique
-  contact   String   @unique @db.VarChar(10)
+  email     String
+  contact   String   @db.VarChar(10)
   message   String?
 }

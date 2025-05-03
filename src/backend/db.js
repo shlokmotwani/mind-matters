@@ -3,14 +3,19 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function addQuery(query) {
-  await prisma.query.create({
-    data: {
-      fullName: query.fullName,
-      email: query.email,
-      contact: query.contact,
-      message: query.message,
-    },
-  });
+  try {
+    await prisma.query.create({
+      data: {
+        fullName: query.fullName,
+        email: query.email,
+        contact: query.contact,
+        message: query.message,
+      },
+    });
+    return "success";
+  } catch (e) {
+    return new Error(e);
+  }
 }
 
 async function getAllQueries() {

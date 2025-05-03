@@ -6,7 +6,7 @@ export default function Contact() {
     <div id="contact" className="anchor">
       <div id="contact-div">
         <h1>Contact Us</h1>
-        <form action={POST_QUERY_URL} method="POST" id="contact-form">
+        <form onSubmit={onSubmit} id="contact-form">
           <div>
             <label htmlFor="name">Full Name: </label>
             <input type="text" name="fullName" id="fullName" required />
@@ -39,4 +39,28 @@ export default function Contact() {
       </div>
     </div>
   );
+}
+
+async function onSubmit(event) {
+  event.preventDefault();
+  const form = event.target.elements;
+  const query = {
+    fullName: form.fullName.value,
+    email: form.email.value,
+    contact: form.contact.value,
+    message: form.message.value,
+  };
+
+  try {
+    await fetch(POST_QUERY_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(query),
+    });
+    console.log("owiejfoi");
+  } catch (e) {
+    console.log(e);
+  }
 }
