@@ -5,6 +5,8 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Query from "./Query.jsx";
 import Success from "./status-pages/Success.jsx";
+import Why from "./Why.jsx";
+import USP from "./USP.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/success",
     element: <Success />,
+  },
+  {
+    path: "/why",
+    element: <Why />,
   },
 ]);
 

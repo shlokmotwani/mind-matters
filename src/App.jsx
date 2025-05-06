@@ -3,6 +3,7 @@ import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Home from "./sections/Home";
 import Services from "./sections/Services";
+import USP from "./USP";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <div id="content_div">
         <Home />
         <About />
+        <USP />
         <Services />
         <Contact />
       </div>

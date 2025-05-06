@@ -1,0 +1,8 @@
+@import "colors.css";
+
+#about {
+  background-color: var(--color2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

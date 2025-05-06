@@ -1,6 +1,9 @@
+@import "colors.css";
+
 #contact {
   display: flex;
   justify-content: center;
+  background-color: var(--color4);
 }
 
 #contact-div {
