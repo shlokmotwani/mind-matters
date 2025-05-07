@@ -1,17 +1,13 @@
 @import "colors.css";
 
-#why-outer{
-    height: 100vh;
+#who {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  /* background-color: var(--color4); */
 }
 
-#why{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    background-color: var(--color4);
-}
-
-#why > p{
-    width: 60%;
+#who > p {
+  width: 60%;
 }

@@ -17,7 +17,7 @@ body {
 }
 
 .anchor {
-  padding-top: 10vh;
+  padding: 10vh 0;
 }
 
 #nav_div {
@@ -30,7 +30,6 @@ body {
 
 #content_div > div {
   border: 1px solid white;
-  height: 90vh;
 }
 
 nav {
@@ -48,8 +47,4 @@ nav > ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
-li {
-  /* list-style-type: none; */
 }
