@@ -1,0 +1,25 @@
+@import "colors.css";
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+}
+
+#home-btn-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#home a,
+#home Link {
+  margin-top: 10px;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+}

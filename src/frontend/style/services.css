@@ -1,0 +1,36 @@
+@import "colors.css";
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#services > div {
+  width: 70%;
+}
+
+#services > div > div {
+  display: grid;
+  align-content: space-evenly;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#services > div > div > div {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#services a {
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-top: 25px;
+}
