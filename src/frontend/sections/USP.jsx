@@ -7,7 +7,7 @@ import hassleFreeImage from "../../../assets/okay-done.png";
 
 export default function USP() {
   return (
-    <div id="usp">
+    <section id="usp">
       <h1>Why Choose Us?</h1>
       <div>
         <div>
@@ -65,6 +65,6 @@ export default function USP() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

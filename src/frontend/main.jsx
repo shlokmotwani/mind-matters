@@ -6,23 +6,35 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Success from "./status-pages/Success.jsx";
 import Why from "./sections/Why.jsx";
 import Who from "./sections/Who.jsx";
+import NotFound from "./status-pages/NotFound.jsx";
+import Layout from "./Layout.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-  },
-  {
-    path: "/success",
-    element: <Success />,
-  },
-  {
-    path: "/why",
-    element: <Why />,
-  },
-  {
-    path: "/meet-your-coach",
-    element: <Who />,
+    element: <Layout />,
+    children: [
+      {
+        path: "",
+        element: <App />,
+      },
+      {
+        path: "why",
+        element: <Why />,
+      },
+      {
+        path: "meet-your-coach",
+        element: <Who />,
+      },
+      {
+        path: "success",
+        element: <Success />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
+    ],
   },
 ]);
 

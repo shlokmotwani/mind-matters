@@ -2,7 +2,7 @@ import "../style/why.css";
 
 export default function Why() {
   return (
-    <div id="why">
+    <section id="why">
       <h1>Welcome to Mind Matters</h1>
       <p>Because your mind deserves just as much care as your body.</p>
       <p>
@@ -24,6 +24,6 @@ export default function Why() {
         👉 Let’s take the first step together. Send me a message to book a FREE discovery call — no pressure, just a conversation.
       </p>
       <a href="#contact">Send message</a>
-    </div>
+    </section>
   );
 }

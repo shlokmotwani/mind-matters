@@ -2,7 +2,7 @@ import "../style/services.css";
 
 export default function Services() {
   return (
-    <div id="services" className="anchor">
+    <section id="services" className="anchor">
       <h1>Services</h1>
       <div>
         <p>
@@ -49,6 +49,6 @@ export default function Services() {
         👉 <a href="#contact">Book your first session</a> — it’s easier than you
         think!
       </p>
-    </div>
+    </section>
   );
 }

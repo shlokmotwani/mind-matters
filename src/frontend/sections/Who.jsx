@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Who() {
   return (
-    <div id="who">
+    <section id="who">
       <div id="who-left">
         <h3>Hi, I’m Sanskar, your Health & Life Coach at Mind Matters.</h3>
         <div>
@@ -29,6 +29,6 @@ export default function Who() {
       <div id="who-right">
         <img src={null} alt="" />
       </div>
-    </div>
+    </section>
   );
 }
